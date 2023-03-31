@@ -4,10 +4,10 @@ API RESTful for to-do list management.
 Requisitos: NodeJs, Postgres instalados.
 
 Passos:
-Clonar o repositório em uma pasta
+Clonar o repositório em uma pasta.
 No terminal:
 nmp int -y // cria arquivos json.
-npm i --save express // instala express .
+npm i --save express // instala express.
 nmp i pg // conexão para o banco de dados.
 
 Na pasta src/tasks tem-se as rotas definidas pelo controlador e as "queiries" para as consultas no banco de dados. 
