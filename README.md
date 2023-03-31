@@ -13,9 +13,6 @@ nmp i pg // conexão para o banco de dados.
 Na pasta src/tasks tem-se as rotas definidas pelo controlador e as "queiries" para as consultas no banco de dados. 
 Em server.js se tem o servidor express. Em db.js tem-se os dados para a conexão com o bando de dados.
 
-Na pasta src/tasks tem-se as rotas definidas pelo controlador e as "queiries" para as consultas no banco de dados. Em server.js se tem o servidor express. Em db.js tem-se os dados para a conexão
-com o bando de dados.
-
 Postgres:
 Foi criada um database chamada de tasks e uma tabela com o mesmo nome.
 
@@ -55,8 +52,3 @@ Exemplo:
 }
 
 DELETE 'localhost:3000/tasks/{id}' deleta uma tarefa passando seu id.
-
-
-
-
-
