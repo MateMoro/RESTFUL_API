@@ -10,6 +10,6 @@ app.get("/", (req,  res) => {
     res.send("Hello World!");
 });
 
-app.use("/api/v1/tasks", tasksRoutes);
+app.use("/tasks", tasksRoutes);
 
 app.listen(port, () => console.log(`app listening on port ${port}`));

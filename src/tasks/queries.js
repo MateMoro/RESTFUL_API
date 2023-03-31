@@ -1,4 +1,4 @@
-const getTasks = "SELECT * FROM tasks";
+const getTasks = "SELECT * FROM tasks ORDER BY id ASC";
 const getTaskById = "SELECT * FROM tasks WHERE id = $1";
 const addTask = "INSERT INTO tasks (id, title) VALUES ($1, $2)";
 const removeTask = "DELETE FROM tasks WHERE id = $1";
