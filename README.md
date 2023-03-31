@@ -13,6 +13,8 @@ nmp i pg // conexão para o banco de dados
 Na pasta src/tasks tem-se as rotas definidas pelo controlador e as "queiries" para as consultas no banco de dados. 
 Em server.js se tem o servidor express. Em db.js tem-se os dados para a conexão com o bando de dados.
 
+Para rodar o servidor, no terminal: node ./server.js
+
 Postgres:
 Foi criada um database chamada de tasks e um tabela com o mesmo nome.
 
