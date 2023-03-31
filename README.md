@@ -10,8 +10,7 @@ nmp int -y // cria arquivos json
 npm i --save express // instala express 
 nmp i pg // conexão para o banco de dados
 
-Na pasta src/tasks tem-se as rotas definidas pelo controlador e as "queiries" para as consultas no banco de dados. Em server.js se tem o servidor express. Em db.js tem-se os dados para a conexão
-com o bando de dados.
+Na pasta src/tasks tem-se as rotas definidas pelo controlador e as "queiries" para as consultas no banco de dados. Em server.js se tem o servidor express. Em db.js tem-se os dados para a conexão com o banco de dados.
 
 Postgres:
 Foi criada um database chamada de tasks e um tabela com o mesmo nome.
@@ -30,14 +29,14 @@ completed_at timestamp);
 INSERT INTO tasks (id, title)
 VALUES (1, 'buy milk'), (2, 'go to the gym'),(3, 'study python');
 
-Usando Postman é possível fazer todas as operações definidas nas rotas.
+Usando Postman é possível fazer todas as operações definidas das rotas.
 
 Usando como endpoint 'localhost:3000/tasks/'.
 
 GET 'localhost:3000/tasks/' -> retorna a lista de tarefas.
 GET 'localhost:3000/tasks/{id}' -> retorna uma tarefa especifica.
 
-POST 'localhost:3000/tasks/' com um arquivo Json como no body adiciona uma tarefa ao banco.
+POST 'localhost:3000/tasks/' com um arquivo Json no body adiciona uma tarefa ao banco.
 
 Exemplo:
 {
@@ -48,7 +47,7 @@ Exemplo:
 PUT 'localhost:3000/tasks/{id}' atualiza uma tarefa com a data de conclusão em completed_at, deve se inserir um timestamp.
 Exemplo:
 {
-"created_at": "2023-03-31T11:23"
+"completed_at": "2023-03-31T11:23"
 }
 
 DELETE 'localhost:3000/tasks/{id}' deleta uma tarefa passando seu id.
